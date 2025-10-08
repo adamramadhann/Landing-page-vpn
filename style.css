@@ -101,6 +101,9 @@ header nav {
 
 .features-section {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
 }
 
 .wrapper-card-info {
