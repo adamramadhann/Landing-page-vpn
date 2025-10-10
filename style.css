@@ -5,15 +5,20 @@
 }
 
 body {
-    background-color: white;
+    background-color: #FBFBFB;
     width: 100%;
     height: 100vh;
 }
 
 .countainer {
     width: 100%;
-    max-width: 1220px;
+    max-width: 1140px;
     margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    background-color: #ffff;
 }
 
 header nav {
@@ -58,12 +63,18 @@ header nav {
     border-radius: 30px;
 }
 
+.hero-section {
+    width: 100%;
+    background-color: #ffff;
+    padding-bottom: 80px;
+}
+
 .hero-wrapper {
     display: flex;
     align-items: center;
     gap: 20px;
     width: 100%;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .hero-content-wrapper {
@@ -104,6 +115,10 @@ header nav {
     display: flex;
     flex-direction: column;
     gap: 96px;
+    background-color: #ffff;
+    padding-bottom: 131px;
+
+    margin-bottom: 100px;
 }
 
 .wrapper-card-info {
@@ -169,3 +184,85 @@ header nav {
     gap: 10px;
 }
 
+/*  price section */
+
+.price-section {
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.price-section p {
+    text-align: center;
+    color: #4F5665;
+    font-size: 16px;
+}
+
+.wrapper-card-price {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.card-price {
+    width: 330px;
+    height: 760px;
+    background-color: #ffff;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 79px;
+    gap: 30px;
+    position: relative;
+}
+
+.card-price:hover {
+    border: 2px solid #F53838;
+    cursor: pointer;
+}
+
+
+
+.perent-list-benefit {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-benefit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wrapper-button-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    bottom: 50px;
+}
+
+.wrapper-button-price button {
+    width: 177px;
+    height: 45px;
+    border-radius: 50px;
+    border: 2px solid #F53838;
+    color: #F53838;
+}
+
+
+.wrapper-button-price button:hover {
+    width: 177px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: #F53838;
+    color: white;
+
+}
