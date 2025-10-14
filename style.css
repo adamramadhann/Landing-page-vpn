@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -9,6 +12,7 @@ body {
     background-color: #FBFBFB;
     width: 100%;
     height: 100vh;
+    scroll-behavior: smooth;
 }
 
 main {
@@ -315,9 +319,10 @@ header nav {
     text-align: center;
     gap: 20px;
     padding-top: 80px;
-    padding-bottom: 189px;
-    background-color: blue;
-    display: grid; 
+    padding-bottom: 189px; 
+    display: flex;
+    flex-direction: column; 
+    scroll-margin-top: 50px;
 }
 
 .wrapper-card-testimonials {
@@ -415,7 +420,6 @@ header nav {
 
 .wrapper-button {
     display: flex;
-    margin-right: 200px;
     align-items: center;
     gap: 20px;
     padding-top: 40px;
@@ -438,4 +442,71 @@ header nav {
 
 .button-arrow-right img {
     transform: scaleX(-1);
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    max-width: 1440px;
+    /* background-color: #F8F8F8; */
+    background-color: #e5b0b0;
+    padding: 180px 150px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.perent-card-subcribe {
+    width: 1140px;
+    height: 233px;
+    border-radius: 20px;
+    border: 2px solid #DDDDDD;
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 70px;
+}
+
+.wrapper-content-card-subcribe {
+    display: grid;
+    gap: 20px;
+}
+
+.wrapper-content-card-subcribe h1 {
+    width: 355px;
+    color: #0B132A;
+    font-size: 35px;
+    padding-right: 30px;
+}
+
+.wrapper-content-card-subcribe h3 {
+    font-size: 18px;
+    color: #4F5665;
+}
+
+.perent-card-subcribe button {
+    width: 250px;
+    height: 60px;
+    border: 2px solid #F53838;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #F53838;
+    background-color: transparent;
+}
+
+.perent-card-subcribe button:active {
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background-color: #F53838;
+    box-shadow: 10px 10px 10px #e5b0b0;
 }
